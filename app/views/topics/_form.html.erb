@@ -1,0 +1,14 @@
+<h1><%= @topic.id ? 'Edit Topic' : 'New Topic' %></h1>
+#with partials you cannot really style them the same 
+<br />
+<% form_for  [@sub, @topic]%>
+<%= f.label :title %>
+<%= f.text_field :title, required: true%>
+<%= f.label :body %>
+<%= f.text_area :body, required: true%>
+<%= f.submit %>
+
+
+# variables we defined in our control, always will be parent and child 
+
+<% end %> ''

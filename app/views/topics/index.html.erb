@@ -1,0 +1,10 @@
+<h1><=% @sub.name %> Topics </h1>
+<%= link_to 'Create topic' new_sub_topic_path(@sub)  %> #if you need more than one array just seperate by comma
+<br />
+<ul>
+    <% @topics.each do |topic| %>
+        <li>
+        <%= link_to topic.name, [@sub, topic] %>  # will go to topic show page#
+        </li>
+    <% end %>
+</ul>
