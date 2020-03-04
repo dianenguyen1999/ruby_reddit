@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'comments/index'
+  get 'comments/new'
+  get 'comments/edit'
     #- action with a html page
   root 'subs#index'
   #as will do shortcuts
